@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-weight: bold;
+    background-color: #090807;
+}
+
+.navContainer {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: #090807;
+    z-index: 10;
+}
+
+.mobNav {
+    display: none;
+}
+
+.lrgNav {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+li {
+    display: inline-block;
+    color: #fff8dc;
+}
+
+a {
+    text-decoration: none;
+    color: #fee600;
+}
+a:hover, a:active {
+    text-decoration: none;
+    color: #800080;
+}
+
+.lrgNav .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.homeBtn, .cvBtn, .aboutMeBtn, .portfolioBtn, .contactBtn {
+    padding-top: 30px;
+    padding-left: 65px;
+}
+
+.hero {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 90vh;
+    background-image: url("../images/hero.png");
+    background-size: cover;
+}
+
+.languageIconsRowOne, .languageIconsRowTwo {
+    width: 800px;
+    height: 100px;
+    position: absolute;
+    bottom: 190px;
+    left: 20px;
+}
+
+.languageIconsRowTwo {
+    bottom: 90px;
+}
+
+.bootstrapIcon, .phpIcon, .jsIcon, .handlebarsIcon, .jqueryIcon, .scrumIcon, .mysqlIcon {
+    width: 110px;
+    height: 90px;
+    padding: 20px;
+}
+
+.heroLogo {
+    position: absolute;
+    top: -550px;
+    left: 20px;
+}
+
+.heroLogo, .logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.heroTextTwo {
+    position: absolute;
+    top: -55px;
+    right: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #800080;
+}
+
+.profile {
+    position: relative;
+    background-color: #090807;
+    height: 300px;
+    padding: 0;
+}
+
+.profileText {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff8dc;
+}
+
+.highlightText {
+    background-color: #800080;
+    color: #090807;
+}
+
+.cvBoxTopHalf, .cvBoxBottomHalf {
+    position: sticky;
+    top: 90px;
+    width: 100%;
+    height: 75vh;
+    background-color: #800080;
+    z-index: -1;
+}
+
+.cv {
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 500px;
+    z-index: -4;
+}
+
+.cvBoxBottomHalf {
+    background-color: #fee600;
+    height: 30vh;
+    z-index: -2;
+    margin-bottom: -10px;
+}
+
+.preCodingHistory {
+    position: sticky;
+    bottom: 0;
+    height: 80vh;
+    background-color: #fee600;
+}
+
+.storySoFar {
+    position: absolute;
+    top: 10%;
+    margin-left: 33%;
+    width: 33%;
+    text-align: center;
+    font-size: 40px;
+    color: #090807;
+    z-index: 2;
+}
+
+.hospitality {
+    position: absolute;
+    top: 30%;
+    font-size: 30px;
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+}
+
+.col-2 {
+    position: relative;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.leftCol, .rightCol {
+    width: 50%;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 30px 50px 0;
+
+}
+
+.rightCol {
+    background-color: #800080;
+    z-index: 0;
+}
+
+.maydenTitle {
+    position: fixed;
+    bottom: 5%;
+    left: 10%;
+    width: 50%;
+    height: 75px;
+    font-size: 28px;
+    color: #fee600;
+    z-index: -8;
+}
+
+.mayden {
+    position: fixed;
+    bottom: 20%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    z-index: -8;
+    background-color: #090807;
+}
+
+.maydenText {
+    margin: 100PX;
+    color: #fff8dc;
+}
+
+.highlightTextTwo {
+    background-color: #fee600;
+    color: #090807;
+    font-size: 30px;
+    text-align: center;
+}
