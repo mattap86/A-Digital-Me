@@ -1,0 +1,72 @@
+.highlightText, .highlightTextTwo {
+    background-color: #800080;
+    font-size: 30px;
+    color: #090807;
+    text-align: center;
+}
+
+.highlightTextTwo {
+    background-color: #fee600;
+}
+
+.heroText {
+    top: -55px;
+    right: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #800080;
+}
+
+.storySoFar {
+    top: 10%;
+    margin-left: 33%;
+    width: 33%;
+    text-align: center;
+    font-size: 40px;
+    color: #fee600;
+    z-index: 2;
+}
+
+.profileText {
+    top: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff8dc;
+}
+
+.hospitality {
+    top: 30%;
+    font-size: 30px;
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+    color: #800080;
+}
+
+.maydenTitle {
+    top: 15%;
+    left: 10%;
+    width: 50%;
+    height: 75px;
+    font-size: 28px;
+    color: #fee600;
+    z-index: -6;
+}
+
+.maydenText {
+    margin: 100px;
+    color: #090807;
+    text-align: right;
+}
+
+.topicTitle {
+    margin: 30px;
+}
+
+.miniProjectsText {
+    font-size: 50px;
+    text-align: center;
+    padding: 20% 0 5% 0;
+    color: #800080;
+    opacity: 1;
+}

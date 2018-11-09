@@ -1,0 +1,35 @@
+.navContainer {
+    top: 0;
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    background-color: #090807;
+    z-index: 10;
+}
+
+.mobNav {
+    display: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #fee600;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #800080;
+}
+
+.navBtns {
+    top: 0;
+    right: 0;
+}
+
+.navBtn {
+    padding: 30px;
+}
