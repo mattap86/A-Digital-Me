@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-weight: bold;
+    background-color: #800080;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.logo, .heroLogo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.hero {
+    top: 0;
+    height: 90vh;
+    background-image: url("../images/hero.png");
+    background-size: cover;
+}
+
+.heroLogo {
+    top: 40%;
+    left: 45%;
+    width: 120px;
+    height: 120px;
+}
+
+.langIconsRowOne, .langIconsRowTwo {
+    width: 460px;
+    height: 100px;
+    top: 100px;
+    left: 20px;
+}
+
+.langIconsRowTwo {
+    top: 220px;
+}
+
+.langIcon {
+    width: 110px;
+    height: 100px;
+    padding: 20px;
+}
+
+.profile {
+    background-color: #090807;
+    height: 300px;
+    padding: 0;
+}
+
+.cvBoxTopHalf, .cvBoxBottomHalf {
+    top: 90px;
+    height: 65vh;
+    background-color: #800080;
+    z-index: -5;
+}
+
+.cvBoxBottomHalf {
+    background-color: #fee600;
+    height: 30vh;
+    margin-bottom: -10px;
+}
+
+.cvPic {
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 500px;
+    z-index: -4;
+}
+
+.preCodingHistory {
+    bottom: 0;
+    height: 80vh;
+    background-color: #090807;
+}
+
+.col-2 {
+    display:flex;
+}
+
+.leftCol, .rightCol {
+    width: 50%;
+    margin: 50px 30px 50px 0;
+}
+
+.rightCol {
+    border: solid 5px #090807;
+}
+
+.maydenLogo {
+    top: 20%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    z-index: -8;
+    background-color: #090807;
+}
+
+.miniProjectsBg {
+    top: 0;
+    height: 100vh;
+    background-image: url('../images/spacerImg.jpg');
+    background-size: cover;
+    z-index: -2;
+}
+
+.miniProjectsPicCover {
+    background-color: #fff8bc;
+    opacity: 0.9;
+    top: 0;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    perspective: 1200px;
+}
+
+.carousel {
+    width: 280px;
+    height: 200px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.slide:hover, .slideTitle:hover {
+    opacity: 1;
+}
+
+.slide1 {
+    transform: rotateY(0deg) translateZ(250px);
+    background-image: url("../images/nasaBuild.jpg");
+}
+
+.slide2 {
+    transform: rotateY(60deg) translateZ(250px);
+    background-image: url("../images/pumpkinDash.jpg");
+}
+
+.slide3 {
+    transform: rotateY(120deg) translateZ(250px);
+    background-image: url("../images/solarSystem.jpg");
+}
+
+.slide4 {
+    transform: rotateY(180deg) translateZ(250px);
+    background-image: url("../images/clock.jpg");
+}
+
+.slide5 {
+    transform: rotateY(240deg) translateZ(250px);
+    background-image: url("../images/comingSoon.jpg");
+}
+
+.slide6 {
+    transform: rotateY(300deg) translateZ(250px);
+    background-image: url("../images/comingSoon.jpg");
+}
+
+.next, .prev {
+    color: #555555;
+    position: absolute;
+    bottom: -50px;
+    padding: 1em 2em;
+    cursor: pointer;
+    background: #fee600;
+    border-radius: 24px;
+    border-top: 1px solid #800080;
+    box-shadow: 0 3px 0 #555555;
+    transition: box-shadow 0.1s, top 0.1s;
+}
+
+.next:hover, .prev:hover {
+    color: #800080;
+}
+
+.next:active, .prev:active {
+    bottom: -53px;
+    box-shadow: 0 1px 0 #555555;
+}
+
+.next {
+    left: 320px;
+}
+
+.prev {
+    right: 320px;
+}
