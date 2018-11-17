@@ -30,7 +30,7 @@ function updateAboutMe(
  * @return array $about_me_result returns the first row of the executed query
  */
 function getDbAboutMe(PDO $db) : array {
-    $aboutMeQuery = $db->prepare("SELECT `story_p1`, `story_p2`, `story_p3`, `story_p4`, `story_p5`
+    $aboutMeQuery = $db->prepare("SELECT `aboutMe`, `preCodingHistory`, `story_p3`, `story_p4`, `story_p5`
                                             FROM `about_me`;");
     $aboutMeQuery->execute();
     $aboutMeResult = $aboutMeQuery->fetch();
@@ -46,9 +46,9 @@ function getDbAboutMe(PDO $db) : array {
  * @return string returns the string 'error' if the array represented in the variable passed into
  * the function does not containing a string assigned the key: 'story_p1'
  */
-function selectStory_p1FromResults(array $result) : string {
-    if (array_key_exists('story_p1', $result)) {
-        return $result['story_p1'];
+function selectAboutMeFromResults(array $result) : string {
+    if (array_key_exists('aboutMe', $result)) {
+        return $result['aboutMe'];
     } else {
         return 'error';
     }
@@ -63,9 +63,9 @@ function selectStory_p1FromResults(array $result) : string {
  * @return string returns the string 'error' if the array represented in the variable passed into
  * the function does not containing a string assigned the key: 'story_p2'
  */
-function selectStory_p2FromResults(array $result) : string {
-    if (array_key_exists('story_p2', $result)) {
-        return $result['story_p2'];
+function selectPreCodingHistoryFromResults(array $result) : string {
+    if (array_key_exists('preCodingHistory', $result)) {
+        return $result['preCodingHistory'];
     } else {
         return 'error';
     }

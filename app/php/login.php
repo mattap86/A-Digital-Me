@@ -4,7 +4,6 @@ session_start();
 
 require_once 'db.php';
 
-//cred check
 function getCredentials(PDO $db) : array {
     $userQuery = $db->prepare("SELECT `username`, `password` FROM `users` WHERE `id` = 1;");
     $userQuery->execute();
@@ -24,14 +23,11 @@ function getPassword(array $userCredentials) : string {
     }
 }
 
-
-// sanitise
 function sanitise(string $string) : string {
     $sanitised = filter_var($string, FILTER_SANITIZE_STRING);
     return $sanitised;
 }
 
-//validate
 function verifyPassword($sanitisedPassword, $password) {
     var_dump($sanitisedPassword);
     if (password_verify($sanitisedPassword, $password)) {
@@ -41,7 +37,8 @@ function verifyPassword($sanitisedPassword, $password) {
     }
 }
 
-function validateUser(string $sanitisedUser, string $username, $verifiedPassword) {
+function validateUser(string $sanitisedUser, string $username, $verifiedPassword)
+{
     if ($sanitisedUser == $username && $verifiedPassword == true) {
         $_SESSION['loggedIn'] = 1;
 
@@ -49,11 +46,6 @@ function validateUser(string $sanitisedUser, string $username, $verifiedPassword
         $_SESSION['loggedIn'] = 0;
     }
 }
-
-var_dump($_POST);
-echo '<br>';
-var_dump($_SESSION);
-
 
 if(isset($_POST['username']) && isset($_POST['password'])){
     $userName = $_POST['username'];

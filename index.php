@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once 'app/php/editStory.php';
 require_once 'app/php/functions.php';
 
@@ -27,7 +29,9 @@ require_once 'app/php/functions.php';
     <header class="navContainer fixed">
         <a href="index.php">
             <div class="logoBtn">
-                <img class="logo" src="app/images/mptLogo.jpg" />
+                <a href="app/php/login.php">
+                    <img class="logo" src="app/images/mptLogo.jpg" />
+                </a>
             </div>
         </a>
         <nav class="mobNav">
@@ -78,9 +82,7 @@ require_once 'app/php/functions.php';
             <div class="preCodingHistory sticky">
                 <p class="storySoFar absolute">MY STORY SO FAR</p>
                 <div class="hospitality absolute">
-                    <p>APART FROM A BRIEF FORAY INTO CODING IN MY LATE TEENS, MY CAREER UP UNTIL NOW HAS BEEN
-                        EXCLUSIVELY IN THE HOSPITALITY INDUSTRY, RUNNING BARS AND RESTAURANTS, LOOKING AFTER PEOPLE
-                        AND CREATING MEMORABLE EXPERIENCES.</p>
+                    <p><?php echo $preCodingHistory ?></p>
                 </div>
             </div>
             <div class="col-2">
@@ -102,29 +104,34 @@ require_once 'app/php/functions.php';
                 <p class="miniProjectsText">MINI PROJECTS</p>
                 <div class="container">
                     <div class="carousel">
-                        <a href="../NASA-SITE-BUILD/index2.html">
+                        <a href="../../NASA-SITE-BUILD/index.html">
                             <img class="slide slide1" src="app/images/nasaBuild.jpg">
                         </a>
-                        <a href="/../runningGame/2018-running-game/index.html">
+                        <a href="../../runningGame/2018-running-game/index.html">
                             <img class="slide slide2" src="app/images/pumpkinDash.jpg">
                         </a>
-                        <a href="/../advancedFrontEnd/solarSystem/index.html">
+                        <a href="../../SVG-Solar-System/index.html">
                             <img class="slide slide3" src="app/images/solarSystem.jpg">
                         </a>
-                        <a href="/../advancedFrontEnd/svgClock/index.html">
+                        <a href="../../SVG-clock/index.html">
                             <img class="slide slide4" src="app/images/clock.jpg">
                         </a>
                         <a href="https://dev.maydenacademy.co.uk/projects/2017/aptitude-test/app/index.html">
                             <img class="slide slide5" src="app/images/aptitude.jpg">
                         </a>
-                        <a href="app/html/new-project.html">
-                            <img class="slide slide6" src="app/images/comingSoon.jpg">
+                        <a href="../../pokedex-2018-phbees/src/public/login.php">
+                            <img class="slide slide6" src="app/images/pokedex.jpg">
                         </a>
                     </div>
                     <div class="next"> > </div>
                     <div class="prev"> < </div>
                 </div>
             </div>
+        </div>
+        <div class="cms">
+            <a href="app/php/login.php">
+                <p>CMS LOGIN</p>
+            </a>
         </div>
     </div>
 </body>

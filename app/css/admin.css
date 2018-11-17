@@ -1,0 +1,50 @@
+body {
+  background-image: url("../images/mptLogoLg.png"); }
+
+h1 {
+  padding-top: 20px;
+  color: #800080; }
+
+.adminForm {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fee600;
+  border-radius: 15px; }
+  .adminForm p {
+    color: #800080; }
+  .adminForm textarea {
+    background-color: #090807;
+    color: #fff8dc;
+    border-radius: 12px; }
+  .adminForm input {
+    background-color: #800080;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #fff8dc;
+    margin-bottom: 20px; }
+
+.adminForm2 {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fee600;
+  border-radius: 15px; }
+  .adminForm2 p {
+    color: #800080; }
+  .adminForm2 textarea {
+    background-color: #090807;
+    color: #fff8dc;
+    border-radius: 12px; }
+  .adminForm2 textarea::placeholder {
+    color: #fff8dc; }
+  .adminForm2 input {
+    padding: 2px 30px 2px 30px;
+    background-color: #090807;
+    border-radius: 12px; }
+  .adminForm2 input::placeholder {
+    color: #fff8dc; }
+  .adminForm2 .projectSubmit {
+    background-color: #800080;
+    border-radius: 12px;
+    margin-bottom: 20px; }

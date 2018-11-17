@@ -53,8 +53,8 @@ $db = dbconn();
 
 $aboutMeResult = getDbAboutMe($db);
 
-$story_p1 = selectStory_p1FromResults($aboutMeResult);
-$story_p2 = selectStory_p2FromResults($aboutMeResult);
-$story_p3 = selectStory_p3FromResults($aboutMeResult);
-$story_p4 = selectStory_p4FromResults($aboutMeResult);
-$story_p5 = selectStory_p5FromResults($aboutMeResult);
+$aboutMe = selectAboutMeFromResults($aboutMeResult);
+$preCodingHistory = selectPreCodingHistoryFromResults($aboutMeResult);
+//$story_p3 = selectStory_p3FromResults($aboutMeResult);
+//$story_p4 = selectStory_p4FromResults($aboutMeResult);
+//$story_p5 = selectStory_p5FromResults($aboutMeResult);
