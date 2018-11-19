@@ -1,32 +1,38 @@
 nav {
   width: 100%;
-  height: 75px;
+  height:75px;
   background-color: #000000;
   position: fixed;
   top: 0;
-  z-index: 1; }
-  nav .logo {
+  z-index: 1;
+  .logo {
     width: 50px;
     height: 50px;
     margin: 10px;
-    border-radius: 50%; }
-  nav ul {
+    border-radius: 50%;
+  }
+  ul {
     position: fixed;
     top: 0;
     right: 0;
     list-style-type: none;
     margin: 0;
-    padding: 25px; }
-    nav ul li {
+    padding: 25px;
+    li {
       display: inline;
       padding: 25px;
-      font-weight: bold; }
-    nav ul a {
+      font-weight: bold;
+    }
+    a {
       color: #fee600;
-      transition: 0.3s; }
-    nav ul a:hover, nav ul a:active {
+      transition: 0.3s;
+    }
+    a:hover, a:active {
       text-decoration: none;
-      color: #800080; }
+      color: #800080;
+    }
+  }
+}
 
 .mobNav {
   float: right;
@@ -34,9 +40,11 @@ nav {
   color: #fee600;
   font-size: 25px;
   visibility: hidden;
-  cursor: pointer; }
-  .mobNav:hover {
-    color: #800080; }
+  cursor: pointer;
+  &:hover {
+    color: #800080;
+  }
+}
 
 .sideNav {
   height: 100%;
@@ -46,16 +54,18 @@ nav {
   right: 0;
   background-color: #000000;
   overflow-x: hidden;
-  transition: 0.5s; }
-  .sideNav #closeSideNav {
+  transition: 0.5s;
+  #closeSideNav {
     padding: 0 0 0 150px;
     text-decoration: none;
     font-size: 25px;
     color: #fee600;
-    transition: 0.3s; }
-    .sideNav #closeSideNav:hover {
-      color: #800080; }
-  .sideNav a {
+    transition: 0.3s;
+    &:hover {
+      color: #800080;
+    }
+  }
+  a {
     padding: 20px;
     text-align: center;
     display: block;
@@ -63,12 +73,18 @@ nav {
     text-decoration: none;
     font-size: 20px;
     color: #fee600;
-    transition: 0.3s; }
-    .sideNav a:hover {
-      color: #800080; }
+    transition: 0.3s;
+    &:hover {
+      color: #800080;
+    }
+  }
+}
 
 @media only screen and (max-width: 720px) {
   ul {
-    display: none; }
+    display: none;
+  }
   .mobNav {
-    visibility: visible; } }
+    visibility: visible;
+  }
+}

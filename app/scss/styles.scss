@@ -35,12 +35,6 @@ body {
   height: 90vh;
   background-image: url("../images/hero.png");
   background-size: cover;
-  .heroLogo {
-    top: 40%;
-    left: 45%;
-    width: 120px;
-    height: 120px;
-  }
   .langIconsRowOne, .langIconsRowTwo {
     width: 460px;
     height: 100px;
@@ -59,7 +53,7 @@ body {
 
 .profile {
   background-color: #090807;
-  height: 300px;
+  height: 320px;
   padding: 0;
   .cvBoxTopHalf, .cvBoxBottomHalf {
     top: 90px;
@@ -192,6 +186,42 @@ body {
     }
     .prev {
       left: -250px;
+    }
+  }
+}
+
+.contactMe {
+  padding: 20px;
+  background-color: #fee600;
+  .map {
+    width: 50%;
+    display: inline-block;
+  }
+  .enquiries {
+    float: right;
+    width: 50%;
+    input {
+      margin: 0 0 10px 0;
+      &::placeholder {
+        color: #800080;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.cms {
+  position: relative;
+  height: 50px;
+  background-color: #090807;
+  p {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #fee600;
+    transition: 0.3s;
+    &:hover {
+      color: #800080;
     }
   }
 }

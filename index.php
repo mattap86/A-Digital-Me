@@ -15,8 +15,8 @@ require_once 'app/php/functions.php';
     <title>Home | Matt Tapley | Digital Me</title>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="app/js/handlebars-v4.0.12.js" defer></script>
+    <script src="app/js/hamburger.js" defer></script>
     <script src="app/js/carousel.js" defer></script>
     <script src="app/js/data.js" defer></script>
     <link rel="icon" href="app/images/favicon.ico" type="image/x-icon">
@@ -26,26 +26,30 @@ require_once 'app/php/functions.php';
     <link rel="stylesheet" type="text/css" href="app/css/textStyles.css">
 </head>
 <body>
-    <header class="navContainer fixed">
-        <a href="index.php">
-            <div class="logoBtn">
-                <a href="app/php/login.php">
-                    <img class="logo" src="app/images/mptLogo.jpg" />
-                </a>
-            </div>
+    <nav>
+        <a href="index2.php">
+            <img class="logo" src="app/images/mptLogo.jpg" />
         </a>
-        <nav class="mobNav">
-            <div></div>
-        </nav>
-        <nav class="lrgNav">
-            <ul class="navBtns fixed">
-            </ul>
-        </nav>
-    </header>
-    <div class="hero sticky">
-        <div>
-            <img class="heroLogo absolute" src="app/images/mptLogoLg.png" />
+        <ul>
+            <li><a href="index2.php">HOME</a></li>
+            <li><a href="#">RÉSUMÉ</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">GET IN TOUCH</a></li>
+        </ul>
+        <div id="hamburger" class="mobNav">
+            <span>&#9776</span>
         </div>
+        <div id="sideBar" class="sideNav">
+            <a id="closeSideNav" href="javascript:void(0)">&times</a>
+            <a href="index2.php">HOME</a>
+            <a href="#">RÉSUMÉ</a>
+            <a href="#">ABOUT ME</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">GET IN TOUCH</a>
+        </div>
+    </nav>
+    <div class="hero sticky">
         <div class="langIconsRowOne absolute">
             <img class="langIcon" src="app/images/php7Logo.png" />
             <img class="langIcon" src="app/images/jsLogo.png" />
@@ -128,11 +132,30 @@ require_once 'app/php/functions.php';
                 </div>
             </div>
         </div>
-        <div class="cms">
+        <div class="contactMe">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10080.147692969227!2d-0.1621384166210168!3d50.83047999301859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758545a1ecffb5%3A0xcbeb00b9111b15ef!2s44+Denmark+Villas%2C+Hove!5e0!3m2!1sen!2suk!4v1542626056378" width="600" height="450" frameborder="0" style="border:0" allowfullscreen z-index="10"></iframe>
+            </div>
+            <div class="enquiries">
+                <form action="#" method="post">
+                    <h1>GET IN TOUCH</h1>
+                    <p>NAME:</p>
+                    <input type="text" name="name" placeholder="Required Field..." class="required">
+                    <p>EMAIL:</p>
+                    <input type="email" name="email" placeholder="Required Field..." class="required">
+                    <p>SUBJECT:</p>
+                    <input type="text" name="subject">
+                    <p>MESSAGE:</p>
+                    <textarea rows="6" cols="80" maxlength="600" name="message"></textarea>
+                    <p>MESSAGES ARE CHECKED DAILY AND I DO MY BEST TO RESPOND ON THE SAME DAY.</p>
+                </form>
+            </div>
+        </div>
+        <footer class="cms">
             <a href="app/php/login.php">
                 <p>CMS LOGIN</p>
             </a>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
