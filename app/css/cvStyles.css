@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+@font-face {
+  font-family: heroFont;
+  src: url("../fonts/cvHeroFont.otf"); }
+
+.heroCv2 {
+  position: sticky;
+  bottom: 0;
+  height: 100vh;
+  background-image: url("../images/cvBg.jpg");
+  background-size: cover;
+  z-index: -1; }
+  .heroCv2 .heroCv3 {
+    position: sticky;
+    height: 10vh;
+    overflow: auto;
+    opacity: 0.3;
+    background-color: transparent; }
+
+.heroCv {
+  position: relative;
+  bottom: 0;
+  height: 100vh;
+  overflow: auto;
+  background-color: #090807;
+  opacity: 0.8; }
+  .heroCv .heroCvText {
+    position: absolute;
+    top: 130px; }
+    .heroCv .heroCvText h1 {
+      font-family: heroFont;
+      font-size: 70px;
+      font-weight: bold;
+      color: #fff8dc; }
+      .heroCv .heroCvText h1 span {
+        color: #800080; }
+    .heroCv .heroCvText .subText {
+      padding: 15px 0 0 0;
+      border-top: solid 2px #fff8dc; }
+    .heroCv .heroCvText h2 {
+      font-family: heroFont;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff8dc; }
+    .heroCv .heroCvText a {
+      margin: 10px;
+      padding: 0 30px 0 0; }
+      @media only screen and (max-width: 810px) {
+        .heroCv .heroCvText a {
+          padding: 0; } }
+      .heroCv .heroCvText a img {
+        background-color: #800080;
+        border-radius: 25%;
+        width: 40px;
+        height: 40px; }
+        @media only screen and (max-width: 700px) {
+          .heroCv .heroCvText a img {
+            width: 20px;
+            height: 20px; } }
+
+.scrollImage {
+  position: absolute;
+  left: 25%;
+  transform: translate(-50%);
+  top: 45%;
+  width: 50px;
+  height: 50px;
+  background-color: #fee600;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: 2s; }
+  @media only screen and (max-width: 1000px) {
+    .scrollImage {
+      display: none; } }
+
+.paperCvContainer {
+  height: 92vh;
+  padding: 130px 0 0 0;
+  border-top: solid 5px #fff8dc;
+  background-color: #090807;
+  background-size: cover;
+  overflow: auto; }
+  .paperCvContainer .paperCvLink h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: heroFont;
+    padding: 20px 60px 0 60px;
+    color: #fff8dc; }
+  .paperCvContainer .paperCvLink h4 {
+    text-align: center;
+    font-family: heroFont;
+    padding: 20px 0 20px 0;
+    color: #fff8dc; }
+  .paperCvContainer .paperCvLink img {
+    margin: 0 auto;
+    width: 75px;
+    height: 75px; }
+  .paperCvContainer .paperCvLink .paperBtn {
+    text-align: center;
+    text-decoration: none;
+    color: #fff8dc;
+    transition: 6s; }
+    .paperCvContainer .paperCvLink .paperBtn:hover {
+      background-color: #800080; }
+
+.education {
+  text-align: center; }

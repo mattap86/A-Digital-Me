@@ -193,24 +193,43 @@ body {
 .contactMe {
   padding: 20px;
   background-color: #fee600;
+  h1 {
+    color: #800080;
+  }
+  a {
+    .anchor {
+      display: block;
+      position: relative;
+      visibility: hidden;
+    }
+  }
   .map {
-    width: 50%;
-    display: inline-block;
+    iframe {
+      width: 97vw;
+    }
   }
   .enquiries {
-    float: right;
-    width: 50%;
+    margin: -20px 0 0 300px;
+    p {
+      color: #800080;
+    }
     input {
+      color: #800080;
       margin: 0 0 10px 0;
-      &::placeholder {
-        color: #800080;
-        font-size: 12px;
-      }
+    }
+    textarea {
+      color: #800080;
+    }
+    .sendBtn {
+      display: block;
+      padding: 5px;
+      border-radius: 25%;
+      border: solid 2px #800080;
     }
   }
 }
 
-.cms {
+footer {
   position: relative;
   height: 50px;
   background-color: #090807;
@@ -218,10 +237,24 @@ body {
     position: absolute;
     right: 10px;
     top: 15px;
-    color: #fee600;
+    color: #090807;
     transition: 0.3s;
     &:hover {
       color: #800080;
     }
   }
+}
+
+@media only screen and (max-width: 775px) {
+  .contactMe {
+    .map {
+      iframe {
+        width: 100%;
+      }
+    }
+    .enquiries {
+      margin: 0 auto;
+    }
+  }
+
 }

@@ -27,26 +27,26 @@ require_once 'app/php/functions.php';
 </head>
 <body>
     <nav>
-        <a href="index2.php">
+        <a href="index.php">
             <img class="logo" src="app/images/mptLogo.jpg" />
         </a>
         <ul>
-            <li><a href="index2.php">HOME</a></li>
-            <li><a href="#">RÉSUMÉ</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="app/php/cv.php">RÉSUMÉ</a></li>
             <li><a href="#">ABOUT ME</a></li>
             <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">GET IN TOUCH</a></li>
+            <li><a href="#contact">GET IN TOUCH</a></li>
         </ul>
         <div id="hamburger" class="mobNav">
             <span>&#9776</span>
         </div>
         <div id="sideBar" class="sideNav">
             <a id="closeSideNav" href="javascript:void(0)">&times</a>
-            <a href="index2.php">HOME</a>
-            <a href="#">RÉSUMÉ</a>
+            <a href="index.php">HOME</a>
+            <a href="app/php/cv.php">RÉSUMÉ</a>
             <a href="#">ABOUT ME</a>
             <a href="#">PORTFOLIO</a>
-            <a href="#">GET IN TOUCH</a>
+            <a href="#contact">GET IN TOUCH</a>
         </div>
     </nav>
     <div class="hero sticky">
@@ -123,7 +123,7 @@ require_once 'app/php/functions.php';
                         <a href="https://dev.maydenacademy.co.uk/projects/2017/aptitude-test/app/index.html">
                             <img class="slide slide5" src="app/images/aptitude.jpg">
                         </a>
-                        <a href="../../pokedex-2018-phbees/src/public/login.php">
+                        <a href="https://dev.maydenacademy.co.uk/projects/2018Aug/pokedex-2018-phbees/">
                             <img class="slide slide6" src="app/images/pokedex.jpg">
                         </a>
                     </div>
@@ -132,22 +132,23 @@ require_once 'app/php/functions.php';
                 </div>
             </div>
         </div>
-        <div class="contactMe">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10080.147692969227!2d-0.1621384166210168!3d50.83047999301859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758545a1ecffb5%3A0xcbeb00b9111b15ef!2s44+Denmark+Villas%2C+Hove!5e0!3m2!1sen!2suk!4v1542626056378" width="600" height="450" frameborder="0" style="border:0" allowfullscreen z-index="10"></iframe>
-            </div>
-            <div class="enquiries">
-                <form action="#" method="post">
+        <div class="container-fluid contactMe">
+            <div class="row">
+                <a class="anchor" id="contact"></a>
+                <div class="col-md-12 col-lg-5 map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10080.147692969227!2d-0.1621384166210168!3d50.83047999301859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758545a1ecffb5%3A0xcbeb00b9111b15ef!2s44+Denmark+Villas%2C+Hove!5e0!3m2!1sen!2suk!4v1542626056378" width="600" height="450" frameborder="0" style="border:0" allowfullscreen z-index="10"></iframe>
+                </div>
+                <form class="col-md-12 col-lg-4 enquiries" action="#" method="post">
                     <h1>GET IN TOUCH</h1>
                     <p>NAME:</p>
-                    <input type="text" name="name" placeholder="Required Field..." class="required">
+                    <input type="text" name="name" placeholder="Nasa" class="required">
                     <p>EMAIL:</p>
-                    <input type="email" name="email" placeholder="Required Field..." class="required">
+                    <input type="email" name="email" placeholder="nasa@nasa.nasa" class="required">
                     <p>SUBJECT:</p>
-                    <input type="text" name="subject">
+                    <input type="text" name="subject" placeholder="Free Holiday">
                     <p>MESSAGE:</p>
-                    <textarea rows="6" cols="80" maxlength="600" name="message"></textarea>
-                    <p>MESSAGES ARE CHECKED DAILY AND I DO MY BEST TO RESPOND ON THE SAME DAY.</p>
+                    <textarea rows="6" cols="50" maxlength="600" name="message" placeholder="Congratulations! You've won a trip to Mars!!"></textarea>
+                    <input type="submit" value="Send" class="sendBtn">
                 </form>
             </div>
         </div>
