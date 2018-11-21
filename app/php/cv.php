@@ -137,24 +137,5 @@ session_start();
         </div>
     </div>
 </body>
-//todo
-//finish cv page
-//finish paper cv and link to cv page
-//complete bests projects and push to git hub
-//create text png to overlay blue birds image
-//link scrum master cert. to cv page
-//check over css and run everything through psr checker
-//check responsiveness across sites
-//display mini projects on home through db with descriptions
-//build portfolio page with carousel on slick desktop screen image with scrolling descriptions and github/site links
-//edit story so far to something less wanky
-//tidy directory structure
-//attempt js scroll animation
-//plan about me page
-//write tests for all functions
-//recompile hbs data
-//add footer icons, c spec char etc.
-//have kyam and charlie/mike check everything
-
 </html>
 
