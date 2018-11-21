@@ -28,7 +28,7 @@ nav {
       color: #fee600;
       transition: 0.3s;
     }
-    a:hover, a:active {
+    a:hover, a:active, a:focus {
       text-decoration: none;
       color: #800080;
     }

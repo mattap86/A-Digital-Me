@@ -67,7 +67,7 @@ require_once 'app/php/functions.php';
         <div class="heroText absolute">
             <p>FULL-STACK DEVELOPMENT</p>
         </div>
-        <img class="cvPic fixed" src="app/images/cv.png" />
+        <img class="cvPic fixed" src="app/images/cvBg3.jpg" />
         <div class="cvBoxTopHalf sticky"></div>
         <div class="cvBoxBottomHalf sticky"></div>
         <div class="row">
@@ -89,18 +89,18 @@ require_once 'app/php/functions.php';
                     <p><?php echo $preCodingHistory ?></p>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="leftCol">
-                    <p class="maydenTitle fixed">MY TIME AT MAYDEN ACADEMY</p>
-                    <img class="maydenLogo fixed" src="app/images/maydenAcademyLogo.jpg" />
-                </div>
-                <div class="rightCol">
-                    <div class="maydenText">
-                        <p class="highlightTextTwo">4 MONTH INTENSIVE COURSE</p>
-                        <div class="topics"></div>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="col-2">-->
+<!--                <div class="leftCol">-->
+<!--                    <p class="maydenTitle fixed">MY TIME AT MAYDEN ACADEMY</p>-->
+<!--                    <img class="maydenLogo fixed" src="app/images/maydenAcademyLogo.jpg" />-->
+<!--                </div>-->
+<!--                <div class="rightCol">-->
+<!--                    <div class="maydenText">-->
+<!--                        <p class="highlightTextTwo">4 MONTH INTENSIVE COURSE</p>-->
+<!--                        <div class="topics"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
         <div class="miniProjects">
             <div class="miniProjectsBg sticky"></div>
@@ -136,7 +136,7 @@ require_once 'app/php/functions.php';
             <div class="row">
                 <a class="anchor" id="contact"></a>
                 <div class="col-md-12 col-lg-5 map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10080.147692969227!2d-0.1621384166210168!3d50.83047999301859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758545a1ecffb5%3A0xcbeb00b9111b15ef!2s44+Denmark+Villas%2C+Hove!5e0!3m2!1sen!2suk!4v1542626056378" width="600" height="450" frameborder="0" style="border:0" allowfullscreen z-index="10"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.501405161214!2d-2.3524962845003907!3d51.37546212816267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718105e7286b9f%3A0xdc9d227aca49b8a1!2sMayden+Academy+-+Software+Development+Training!5e0!3m2!1sen!2suk!4v1542756178030" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <form class="col-md-12 col-lg-4 enquiries" action="#" method="post">
                     <h1>GET IN TOUCH</h1>

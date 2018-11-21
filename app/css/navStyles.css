@@ -25,7 +25,7 @@ nav {
     nav ul a {
       color: #fee600;
       transition: 0.3s; }
-    nav ul a:hover, nav ul a:active {
+    nav ul a:hover, nav ul a:active, nav ul a:focus {
       text-decoration: none;
       color: #800080; }
 

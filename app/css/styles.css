@@ -58,6 +58,7 @@ body {
     left: 25%;
     width: 50%;
     height: 500px;
+    border-radius: 50%;
     z-index: -4; }
   .profile .preCodingHistory {
     bottom: 0;

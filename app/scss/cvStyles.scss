@@ -3,9 +3,12 @@
     scroll-behavior: smooth;
 }
 
+body {
+  background-color: #fff8dc;
+}
 @font-face {
-    font-family: heroFont;
-    src: url("../fonts/cvHeroFont.otf");
+    font-family: longHairedFreakyPeople;
+    src: url("../fonts/longHairedFreakyPeople.otf");
 }
 
 .heroCv2 {
@@ -34,8 +37,8 @@
     .heroCvText {
         position: absolute;
         top: 130px;
+        font-family: longHairedFreakyPeople;
         h1 {
-            font-family: heroFont;
             font-size: 70px;
             font-weight: bold;
             color: #fff8dc;
@@ -48,7 +51,6 @@
             border-top: solid 2px #fff8dc;
         }
         h2 {
-            font-family: heroFont;
             font-size: 30px;
             font-weight: bold;
             color: #fff8dc;
@@ -91,23 +93,22 @@
 }
 
 .paperCvContainer {
-    height: 92vh;
-    padding: 130px 0 0 0;
+    height: 100vh;
+    padding: 250px 0 0 0;
     border-top: solid 5px #fff8dc;
     background-color: #090807;
     background-size: cover;
     overflow: auto;
+    font-family: longHairedFreakyPeople;
     .paperCvLink {
         h1 {
-            font-size: 30px;
+            font-size: 35px;
             text-align: center;
-            font-family: heroFont;
             padding: 20px 60px 0 60px;
             color: #fff8dc;
         }
-        h4 {
+        h3 {
             text-align: center;
-            font-family: heroFont;
             padding: 20px 0 20px 0;
             color: #fff8dc;
         }
@@ -129,5 +130,60 @@
 }
 
 .education {
+    background-color: #090807;
     text-align: center;
+    h1 {
+        font-family: longHairedFreakyPeople;
+        font-size: 50px;
+        color: #fff8dc;
+    }
 }
+
+.school {
+    height: 60vh;
+    font-family: longHairedFreakyPeople;
+    background-color: #090807;
+    div {
+        .maydenLogo {
+          margin-top: 100px;
+          width: 200px;
+          height: 200px;
+          transform: translateX(500px);
+          animation: logoScroll 9s ease-out forwards;
+        }
+    }
+    .logoBg {
+      position: relative;
+        .rasLogo {
+            margin-top: 50px;
+            width: 200px;
+            height: 200px;
+          transform: translateX(-500px);
+          animation: logoScroll 5s ease-out forwards;
+        }
+        .schoolName {
+          font-size: 18px;
+          color: #fff8dc;
+        }
+    }
+    .blurb {
+        color: #fff8dc;
+        font-size: 20px;
+        margin-top: 50PX;
+        border-left: solid 1px #fff8dc;
+    }
+    .blurb2 {
+        color: #090807;
+        font-size: 20px;
+        margin-top:100px;
+        margin-bottom: 50px;
+        border-right: solid 1px #090807;
+   }
+}
+
+@keyframes logoScroll {
+  to { transform: translateX(0); }
+}
+
+
+
