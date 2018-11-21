@@ -103,9 +103,10 @@ require_once 'app/php/functions.php';
 <!--            </div>-->
         </div>
         <div class="miniProjects">
-            <div class="miniProjectsBg sticky"></div>
-            <div class="miniProjectsPicCover sticky">
+            <div class="miniProjectsBg sticky">
                 <p class="miniProjectsText">MINI PROJECTS</p>
+            </div>
+            <div class="miniProjectsPicCover sticky">
                 <div class="container">
                     <div class="carousel">
                         <a href="../../NASA-SITE-BUILD/index.html">

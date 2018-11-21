@@ -153,6 +153,7 @@ session_start();
 //plan about me page
 //write tests for all functions
 //recompile hbs data
+//add footer icons, c spec char etc.
 //have kyam and charlie/mike check everything
 
 </html>
