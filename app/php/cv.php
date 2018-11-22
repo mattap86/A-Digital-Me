@@ -12,7 +12,6 @@ session_start();
     <title>Résumé | Matt Tapley | Digital Me</title>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="../js/scrollAnimation.js" defer></script>
     <script src="../js/hamburger.js" defer></script>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
