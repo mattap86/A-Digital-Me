@@ -15,3 +15,4 @@ function closeNav() {
 document.getElementById('closeSideNav').addEventListener('click', function() {
     closeNav()
 })
+

@@ -169,6 +169,3 @@ function displayProjects(array $projectResults) : string {
     }
     return $result;
 }
-
-
-

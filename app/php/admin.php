@@ -40,18 +40,5 @@ require 'editStory.php';
             <p><input class="projectSubmit" type="submit" value="Upload Project" /></p>
         </div>
     </form>
-<!--    <form action="hide.php" method="post">-->
-<!--        <h1>HIDE PROJECT</h1>-->
-<!--        <label>Project Name :</label>-->
-<!--       <div>-->
-<!--            <select name="projectId">-->
-<!--                <option>PLEASE CHOOSE YOUR PROJECT:-</option>-->
-<!--                <option value="1">pilotShop</option>-->
-<!--                <option value="2">projectTwo</option>-->
-<!--                <option value="3">projectThree</option>-->
-<!--            </select>-->
-<!--            <input type="submit" value="Hide Project" />-->
-<!--        </div>-->
-<!--    </form>-->
 </body>
 </html>
