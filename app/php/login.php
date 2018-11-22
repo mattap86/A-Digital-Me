@@ -69,7 +69,6 @@ if ($_SESSION['loggedIn'] == 1) {
 
 ?>
 
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
