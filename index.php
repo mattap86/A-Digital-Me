@@ -89,18 +89,6 @@ require_once 'app/php/functions.php';
                     <p><?php echo $preCodingHistory ?></p>
                 </div>
             </div>
-<!--            <div class="col-2">-->
-<!--                <div class="leftCol">-->
-<!--                    <p class="maydenTitle fixed">MY TIME AT MAYDEN ACADEMY</p>-->
-<!--                    <img class="maydenLogo fixed" src="app/images/maydenAcademyLogo.jpg" />-->
-<!--                </div>-->
-<!--                <div class="rightCol">-->
-<!--                    <div class="maydenText">-->
-<!--                        <p class="highlightTextTwo">4 MONTH INTENSIVE COURSE</p>-->
-<!--                        <div class="topics"></div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
         <div class="miniProjects">
             <div class="miniProjectsBg sticky">
