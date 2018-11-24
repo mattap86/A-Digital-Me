@@ -1,50 +1,42 @@
 <?php
 
-/*
- * This function updates the fields in the table `about_me` defined after the SET function of the query
+/**
+ * Posts validated input to the assigned fields of a table in a db.
  *
- * @param string $updatedBio is the new string pulled from the admin.php 'bio' textarea
- * @param string $updatedInterests is the new string pulled from the admin.php 'interests' textarea
- * @param string $updatedQualifications is the new string pulled from the admin.php 'qualifications' textarea
- * @param object $db is the database being updated by the function
+ * @param string $validatedAboutMe is the aboutMe input after sanitisation.
+ * @param string $validatedPreCodingHistory is the preCodingHistory input after sanitisation.
+ * @param PDO $db is the db connection.
  *
+ * @return bool true if post successful.
  */
-function updateAboutMe(
-    string $validatedStory_p1,
-    string $validatedStory_p2,
-    string $validatedStory_p3,
-    string $validatedStory_p4,
-    string $validatedStory_p5,
-    PDO $db
-) : array {
-    $updateAboutMe = $db->prepare("UPDATE `about_me` SET `story_p1` = ?, `story_p2` = ?,
-                                                    `story_p3` = ?, `story_p4` = ?. `story_p5` = ? WHERE id='1'");
-    $updateAboutMe->execute([$validatedStory_p1, $validatedStory_p2, $validatedStory_p3, $validatedStory_p4, $validatedStory_p5]);
+function updateAboutMe(string $validatedAboutMe, string $validatedPreCodingHistory, PDO $db) : bool {
+    $updateAboutMe = $db->prepare("UPDATE `about_me` SET `aboutMe` = ?, `preCodingHistory` = ? WHERE id = '1';");
+    return $updateAboutMe->execute([$validatedAboutMe, $validatedPreCodingHistory]);
+
 }
 
 /**
- * This function retrieves the data from the selected fields in the about_me table of the portfolio database
+ * Retrieves the data from the selected fields in the about_me table of the portfolio database.
  *
- * @param pdo $db represents the database the data is pulled from
+ * @param pdo $db represents the database the data is pulled from.
  *
- * @return array $about_me_result returns the first row of the executed query
+ * @return array $aboutMeResult returns the first row of the executed query.
  */
-function getDbAboutMe(PDO $db) : array {
-    $aboutMeQuery = $db->prepare("SELECT `aboutMe`, `preCodingHistory`, `story_p3`, `story_p4`, `story_p5`
-                                            FROM `about_me`;");
+function getAboutMe(PDO $db) : array {
+    $aboutMeQuery = $db->prepare("SELECT `aboutMe`, `preCodingHistory` FROM `about_me`;");
     $aboutMeQuery->execute();
     $aboutMeResult = $aboutMeQuery->fetch();
     return $aboutMeResult;
 }
 
 /**
- * This function selects the 'story_p1' field from the about_me table retrieved in the getAboutMe function
+ * This function selects the 'aboutMe' field from the about_me table retrieved in the getAboutMe function
  *
- * @param array $result represents an assoc. array containing the string assigned the key: story_p1
+ * @param array $result represents an assoc. array containing the string assigned the key: aboutMe
  *
- * @return string $result returns the string assigned the key: 'story_p1'
+ * @return string $result returns the string assigned the key: 'aboutMe'
  * @return string returns the string 'error' if the array represented in the variable passed into
- * the function does not containing a string assigned the key: 'story_p1'
+ * the function does not containing a string assigned the key: 'aboutMe'
  */
 function selectAboutMeFromResults(array $result) : string {
     if (array_key_exists('aboutMe', $result)) {
@@ -55,68 +47,17 @@ function selectAboutMeFromResults(array $result) : string {
 }
 
 /**
- * This function selects the 'story_p2' field from the about_me table retrieved in the getAboutMe function
+ * This function selects the 'preCodingHistory' field from the about_me table retrieved in the getAboutMe function
  *
- * @param array $result represents an assoc. array containing the string assigned the key: 'story_p2'
+ * @param array $result represents an assoc. array containing the string assigned the key: 'preCodingHistory'
  *
- * @return string $result returns the string assigned the key: 'story_p2'
+ * @return string $result returns the string assigned the key: 'preCodingHistory'
  * @return string returns the string 'error' if the array represented in the variable passed into
- * the function does not containing a string assigned the key: 'story_p2'
+ * the function does not containing a string assigned the key: 'preCodingHistory'
  */
 function selectPreCodingHistoryFromResults(array $result) : string {
     if (array_key_exists('preCodingHistory', $result)) {
         return $result['preCodingHistory'];
-    } else {
-        return 'error';
-    }
-}
-
-/**
- * This function selects the 'story_p3' field from the about_me table retrieved in the getAboutMe function
- *
- * @param array $result represents an assoc. array containing the string assigned the key: 'story_p3'
- *
- * @return string $result returns the string assigned the key: 'story_p3'
- * @return string returns the string 'error' if the array represented in the variable passed into
- * the function does not containing a string assigned the key: 'story_p3'
- */
-function selectStory_p3FromResults(array $result) : string {
-    if (array_key_exists('story_p3', $result)) {
-        return $result['story_p3'];
-    } else {
-        return 'error';
-    }
-}
-
-/**
- * This function selects the 'story_p4' field from the about_me table retrieved in the getAboutMe function
- *
- * @param array $result represents an assoc. array containing the string assigned the key: 'story_p4'
- *
- * @return string $result returns the string assigned the key: 'story_p4'
- * @return string returns the string 'error' if the array represented in the variable passed into
- * the function does not containing a string assigned the key: 'story_p4'
- */
-function selectStory_p4FromResults(array $result) : string {
-    if (array_key_exists('story_p4', $result)) {
-        return $result['story_p4'];
-    } else {
-        return 'error';
-    }
-}
-
-/**
- * This function selects the 'story_p5' field from the about_me table retrieved in the getAboutMe function
- *
- * @param array $result represents an assoc. array containing the string assigned the key: 'story_p5'
- *
- * @return string $result returns the string assigned the key: 'story_p5'
- * @return string returns the string 'error' if the array represented in the variable passed into
- * the function does not containing a string assigned the key: 'story_p5'
- */
-function selectStory_p5FromResults(array $result) : string {
-    if (array_key_exists('story_p5', $result)) {
-        return $result['story_p5'];
     } else {
         return 'error';
     }
@@ -129,7 +70,7 @@ function selectStory_p5FromResults(array $result) : string {
  *
  * @return array $projectResults is an associative array of the data fetched by $projectQuery
  */
-function getDbProject(PDO $db) : array {
+function getProjects(PDO $db) : array {
     $projectQuery = $db->prepare("SELECT `name`, `image_url`, `url`, `summary` FROM `projects` WHERE `deleted` = 0;");
     $projectQuery->execute();
     $projectResults = $projectQuery->fetchAll();
