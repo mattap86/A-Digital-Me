@@ -13,6 +13,9 @@ h1 {
   text-align: center;
   background-color: #fee600;
   border-radius: 15px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
   p {
     color: #800080;
   }
@@ -36,6 +39,9 @@ h1 {
   text-align: center;
   background-color: #fee600;
   border-radius: 15px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
   p {
     color: #800080;
   }
@@ -61,6 +67,3 @@ h1 {
     margin-bottom: 20px;
   }
 }
-
-
-

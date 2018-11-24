@@ -18,10 +18,10 @@ require 'editStory.php';
     <form class="adminForm" action="admin.php" method="post">
         <h1><u>UPDATE ABOUT ME</u></h1>
         <p>About Me:</p>
-        <textarea name="newAboutMe" rows="2" cols="100" maxlength="600"><?php echo $aboutMe ?></textarea>
+        <textarea name="newAboutMe" rows="10" cols="60" maxlength="600"><?php echo $aboutMe ?></textarea>
         <p><input type="submit" value="Update About Me" /></p>
         <p>Pre-coding History:</p>
-        <textarea name="newHistory" rows="6" cols="100" maxlength="600"><?php echo $preCodingHistory ?></textarea>
+        <textarea name="newHistory" rows="10" cols="60" maxlength="600"><?php echo $preCodingHistory ?></textarea>
         <p><input type="submit" value="Update History" /></p>
     </form>
     <form class="adminForm2" action="admin.php" method="post">
@@ -36,7 +36,8 @@ require 'editStory.php';
         </div>
         <div>
             <p><u>Project Summary</u></p>
-            <textarea name="newProjectSummary" rows="10" cols="100" maxlength="600" placeholder="Max 600 characters..."></textarea>
+            <textarea name="newProjectSummary" rows="10" cols="60" maxlength="600" placeholder="Max 600 characters...">
+            </textarea>
             <p><input class="projectSubmit" type="submit" value="Upload Project" /></p>
         </div>
     </form>

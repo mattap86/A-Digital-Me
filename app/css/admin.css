@@ -11,6 +11,9 @@ h1 {
   text-align: center;
   background-color: #fee600;
   border-radius: 15px; }
+  @media only screen and (max-width: 600px) {
+    .adminForm {
+      width: 100%; } }
   .adminForm p {
     color: #800080; }
   .adminForm textarea {
@@ -30,6 +33,9 @@ h1 {
   text-align: center;
   background-color: #fee600;
   border-radius: 15px; }
+  @media only screen and (max-width: 600px) {
+    .adminForm2 {
+      width: 100%; } }
   .adminForm2 p {
     color: #800080; }
   .adminForm2 textarea {
