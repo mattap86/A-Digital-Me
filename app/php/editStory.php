@@ -5,7 +5,6 @@ require_once 'db.php';
 
 $db = dbconn();
 
-//set of if statements to sanitise about me inputs from admin.php
 if (isset($_POST['newAboutMe'])) {
     $validatedAboutMe = filter_var($_POST['newAboutMe'], FILTER_SANITIZE_STRING);
 }
@@ -18,8 +17,8 @@ if (isset($validatedAboutMe, $validatedPreCodingHistory, $db)) {
     updateAboutMe($validatedAboutMe, $validatedPreCodingHistory, $db);
 }
 
-
 $aboutMeResult = getAboutMe($db);
 
 $aboutMe = selectAboutMeFromResults($aboutMeResult);
+
 $preCodingHistory = selectPreCodingHistoryFromResults($aboutMeResult);
